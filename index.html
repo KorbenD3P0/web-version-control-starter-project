@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
 <head>
-   <title>Bootstrap Example</title>
+   <title>Landing Page</title>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,22 +18,25 @@
 
 <body>
   <!-- Navbar gets added here -->
-   <div id="nav-placeholder"></div>
-    <div class="container-fluid bg-dark text-white p-5 my-0 text-center min-vh-100">
-      <p>This is a webpage to display media I've created about my favorite horror franchises, like Final Destination, where a group narrowly escapes a disaster only to later be hunted by Death itself in a series of increasingly brutal accidents.
+  <a class="visually-hidden-focusable btn btn-primary m-2" href="#main-content">Skip to main content</a>
+  <div id="nav-placeholder"></div>
+  <main id="main-content" class="container-fluid bg-dark text-white p-5 my-0 min-vh-100">
+     <p class="text-start lh-lg">This is a webpage to display media I've created about my favorite horror franchises, like Final Destination, where a group narrowly escapes a disaster only to later be hunted by Death itself in a series of increasingly brutal accidents.</p>
     <br>
     <!-- The below link is to a music video I edited together from the series-->
     <a href="https://www.reddit.com/r/FinalDestination/comments/1eu4q0n/the_final_blackout/?share_id=d8KSG_67IsoYN0GgB-fT2&utm_content=1&utm_medium=android_app&utm_name=androidcss&utm_source=share&utm_term=2">Being inspired by horror movies give me a chance to flex my own creative muscle</a>
-  </h4>..in more ways than one!</h4>
-  <span style='font-size:px;'>&#128071;</span>  
+    <h4>..in more ways than one!</h4>
+    <span style='font-size:px;'>&#128071;</span>  
 
-  <div class="card mx-auto" style="width:400px">
-  <img class="card-img-bottom rounded mx-auto d-block" 
-      src="images/das_logo.jpg" 
-      alt="The Logo for my Horror-Themed YouTube Channel" 
-      style="width:100%">
-    <p>My Horror-Themed YouTube Channel<br>But the real pride and joy is my-</p>
-  </div>
+    <div class="card" style="width:100%">
+      <h3 class="card-title">My YouTube Channel</h3>
+      <p class="card-text">I have a YouTube channel where I post my own horror-themed content, including reviews, video essays and more. I enjoy creating content that is both entertaining and related to IP I love, and I hope to continue to grow my channel and reach a wider audience.</p>
+    <img class="card-img-bottom rounded mx-auto d-block" 
+        src="images/das_logo.jpg" 
+        alt="The Logo for my Horror-Themed YouTube Channel" 
+        style="width:100%">
+      <p>But the real pride and joy is my-</p>
+    </div>
 
     <!-- The below link is to the DieNamic Engine that I coded from a single script about a deadly house (House Trap) into a full-fledged game-agnostic engine with bootstrapping, assets, JSON game data for SIX games I also created, data verification on init, debugging logs and more!-->
     <h2></h2>
@@ -42,8 +45,6 @@
         <a href="https://play.google.com/store/apps/details?id=org.dienamicengine.dep_fdt&pcampaignid=web_share" target="_blank">DieNamic Engine is a free mobile game that lets you live your own personalized horror movie scenarios and try to survive them</a>😬
         <p>Now with six games featuring tongue-in-cheek knockoff versions of horror franchises like Saw, Final Destination, A Nightmare on Elm Street and more!</p>      
         <br>
-
-
   <br>
   <footer>
     <br>&copy; 2026 DieNamic Engine. All rights reserved.
@@ -53,7 +54,7 @@
        $("#nav-placeholder").load("navbar.html #site-nav");
    </script>
         </div>
-
+</main>
 </body>
 
 </html>

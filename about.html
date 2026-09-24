@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
 <head>
-   <title>Bootstrap Example</title>
+   <title>About Me</title>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,34 +17,56 @@
 </head>
 
 <body>
+  <a class="visually-hidden-focusable btn btn-primary m-2" href="#main-content">Skip to main content</a>
   <!-- Navbar gets added here -->
-   <div id="nav-placeholder"></div>
-    <div class="container-fluid bg-dark text-white p-5 my-0 text-center min-vh-100">
-      <p>This is a webpage to display media I've created about my favorite horror franchises, like Final Destination, where a group narrowly escapes a disaster only to later be hunted by Death itself in a series of increasingly brutal accidents.
+  <div id="nav-placeholder"></div>
+  <main id="main-content" class="container-fluid bg-dark text-white p-5 my-0 min-vh-100">
+      <p>My name is Dallas - I am in school for computer programming and I enjoy filling my time with game development and personal projects that range from hosting my own YouTube channel to creating digital art.</p><br>
+        <h2 class="h4 mt-4">Personal Experience:</h2>
+          <ul class="list-unstyled">
+            <li>Python engine and game development (DieNamic Engine)</li>
+            <li>Linux and Windows system administration</li>
+            <li>Networking and security</li>
+            <li>Self-hosted homelab services</li>
+            <li>Digital art and animation</li>
+            <li>Video production and digital art</li>
+            <li>Web design and development</li>
+            <li>Programming in HTML, CSS, Python, JSON data and more</li>
+          </ul><p>I have experience in programming, game development, web design, video production and more, and I enjoy using my skills to bring ideas to life. Whether it's developing a new game engine, hosting several services on my homelab or designing a website, I am always looking for new challenges and opportunities to grow as a developer.</p>
     <br>
-    <!-- The below link is to a music video I edited together from the series-->
-    <a href="https://www.reddit.com/r/FinalDestination/comments/1eu4q0n/the_final_blackout/?share_id=d8KSG_67IsoYN0GgB-fT2&utm_content=1&utm_medium=android_app&utm_name=androidcss&utm_source=share&utm_term=2">Being inspired by horror movies give me a chance to flex my own creative muscle</a>
-  </h4>..in more ways than one!</h4>
-  <span style='font-size:px;'>&#128071;</span>  
-
-  <div class="card mx-auto" style="width:400px">
-  <img class="card-img-bottom rounded mx-auto d-block" 
-      src="images/das_logo.jpg" 
-      alt="The Logo for my Horror-Themed YouTube Channel" 
-      style="width:100%">
-    <p>My Horror-Themed YouTube Channel<br>But the real pride and joy is my-</p>
+    <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
   </div>
-
-    <!-- The below link is to the DieNamic Engine that I coded from a single script about a deadly house (House Trap) into a full-fledged game-agnostic engine with bootstrapping, assets, JSON game data for SIX games I also created, data verification on init, debugging logs and more!-->
-    <h2></h2>
-    <h3>DieNamic Engine</h3>
-      <h4 class="section-title left">One Engine, Unlimited Stupidity</h4>
-        <a href="https://play.google.com/store/apps/details?id=org.dienamicengine.dep_fdt&pcampaignid=web_share" target="_blank">DieNamic Engine is a free mobile game that lets you live your own personalized horror movie scenarios and try to survive them</a>😬
-        <p>Now with six games featuring tongue-in-cheek knockoff versions of horror franchises like Saw, Final Destination, A Nightmare on Elm Street and more!</p>      
-        <br>
-
-
-  <br>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    <img src="images/goobie.png" alt="Digital art of my dog who hates being photographed" class="d-block w-100">
+        <div class="text-center py-3">
+            <h3>My Pittskie provides both inspiration and companionship. This is a piece of digital art I created because he's just that cute.</h3>
+        </div>
+    </div>
+    <div class="carousel-item active">
+      <img src="images/me.jpg" class="d-block w-100" alt="Me outdoors in the fall leaves">
+      <div class="text-center py-3">
+        <h3>A picture of myself</h3>
+        <p>I enjoy the outdoors and spending time with my partner, dog and family.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="img " src="images/zayne.jpg" alt="My partner" class="d-block w-100">
+        <div class="text-center py-3">
+            <h3>My Partner</h3>
+            <p>Spending time with my boyfriend Zayne is one of the most rewarding aspects of my life. Our interests have a lot of crossover so we are able to enjoy hikes with our dogs, go on trips out of town or stay home doing our individual activities.<br>I love him very much!</p>
+        </div>
+    </div>
+  </div>
+  </main>
   <footer>
     <br>&copy; 2026 DieNamic Engine. All rights reserved.
   </footer>
@@ -55,5 +77,4 @@
         </div>
 
 </body>
-
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
 <head>
-   <title>Bootstrap Example</title>
+   <title>Games</title>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,13 +17,20 @@
 </head>
 
 <body>
+  <a class="visually-hidden-focusable btn btn-primary m-2" href="#main-content">Skip to main content</a>
+    <div class="alert alert-warning">
+      <!-- This footer comes with a warning for people with a low tolerance for graphic content -->
+      <strong>Warning!</strong> Rated 17+. Contains graphic text and 'South Park'-style animated depictions of death, injury, and gore; psychological horror; mature language; dark themes. Not suitable for children.
+          <!-- This footer comes with a warning for people with a low tolerance for graphic content -->
+    </div>
+  <a class="visually-hidden-focusable btn btn-primary m-2" href="#main-content">Skip to main content</a>
   <!-- Navbar gets added here -->
-   <div id="nav-placeholder"></div>
-   
-    <div class="container-fluid bg-dark text-white p-5 my-0 text-center min-vh-100">
+  <div id="nav-placeholder"></div>
+  <main id="main-content" class="container-fluid bg-dark text-white p-5 my-0 min-vh-100">
     <h1>Six games for the price of none</h1>
-      <p>The idea was pieced together after I'd come across a Reddit post about there not being a 'Final Destination' game, so I decided to make one! I knew I couldn't create and manipulate 3D environments yet, but I did know I could write my ass off, so I decided on a branching text adventure. A single shell script about a deadly house ("House Trap") was the starting point.<br>As functions piled up, the need to refactor turned one script into a main.py entry point with a dedicated hazard engine to handle environmental dangers, the need for more reactivity led to the integration of a QTE engine, and so on until before I knew it, the project had grown into a full-fledged game-agnostic engine with bootstrapping, assets, animation, JSON game data for SIX games I am also developing, data verification on init, debugging logs and more!</p>
-
+      <p>The idea was pieced together after I'd come across a Reddit post about there not being a 'Final Destination' game, so I decided to make one! I knew I couldn't create and manipulate 3D environments yet, but I did know I could write my ass off, so I decided on a branching text adventure that I later added music, sound effects and animation to. A single shell script about a deadly house ("House Trap") was the starting point.<br>
+      <img src="/images/hospital_map.png" alt="A whiteboard rendering of the hospital map of 'Death's Designs'" class="img-fluid"><br>
+        As functions piled up, the need to refactor turned one script into a main.py entry point with a dedicated hazard engine to handle environmental dangers, the need for more reactivity led to the integration of a QTE engine, the size of levels made it necessary to make plans and maps and so on until before I knew it, the project had grown into a full-fledged game-agnostic engine with bootstrapping, assets, animation, JSON game data for SIX games I am also developing, data verification on init, debugging logs and more!</p>
         <div class="accordion" id="accordionPanelsStayOpenExample">
           <div class="accordion-item">
             <h2 class="accordion-header">
@@ -60,21 +67,9 @@
                 <strong>A unique take on the choose-your-own-adventure genre.</strong> A true branching-node adventure, not a linear game with the occasional fork — every scene is a real decision point, and every decision can save someone or cost them. Death's shuffled a kill order for your friend group behind the scenes, and the only warning is a phone call you can choose to ignore.
               </div>
             </div>
-          </div>
-        </div>
-      
-        <br>
-        <img src="https://4kwallpapers.com/images/walls/thumbs_3t/22358.jpg" alt="Final Destination: Bloodlines">
-
-
-  <br>
+      </main>
   <footer>
-    <div class="alert alert-warning">
-      <!-- This footer comes with a warning for people with a low tolerance for graphic content -->
-      <strong>Warning!</strong> Rated 17+. Contains graphic text and 'South Park'-style animated depictions of death, injury, and gore; psychological horror; mature language; dark themes. Not suitable for children.
-          <!-- This footer comes with a warning for people with a low tolerance for graphic content -->
-    </div>
-    <br>&copy; 2026 DieNamic Engine. All rights reserved.
+  &copy; 2026 DieNamic Engine. All rights reserved.
   </footer>
         </div>
    <script>
@@ -83,5 +78,4 @@
    </script>
 
 </body>
-
 </html>
